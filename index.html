@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
+    <script>
+      /* Prefer clean URLs when someone lands on the .html form. */
+      (function () {
+        var path = window.location.pathname;
+        if (!/\.html$/i.test(path)) return;
+        var clean = path.replace(/\.html$/i, "");
+        if (/\/index$/i.test(clean)) clean = clean.replace(/\/index$/i, "/") || "/";
+        if (clean === "") clean = "/";
+        window.location.replace(clean + window.location.search + window.location.hash);
+      })();
+    </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dogs R Us Collingwood | Little Dog Daycare</title>
@@ -218,9 +230,9 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "@id": "https://dogsruscollingwood.com/little-dog-daycare.html#service",
+              "@id": "https://dogsruscollingwood.com/little-dog-daycare#service",
               "name": "Little Dog Daycare",
-              "url": "https://dogsruscollingwood.com/little-dog-daycare.html",
+              "url": "https://dogsruscollingwood.com/little-dog-daycare",
               "description": "Small dog daycare and puppy daycare for dogs 18″ (paw-to-back) or under in Collingwood.",
               "provider": {
                 "@id": "https://dogsruscollingwood.com/#business"
@@ -470,7 +482,7 @@
         <h2>Little Dogs</h2>
         <p class="path-sub">18″ tall (paw-to-back) or under</p>
         <p>Small dog daycare built around the unique needs of little dogs (18″ or under) — gentle play groups and plenty of places to rest.</p>
-        <a class="btn btn-block" href="little-dog-daycare.html">Little Dog Pricing</a>
+        <a class="btn btn-block" href="little-dog-daycare">Little Dog Pricing</a>
       </article>
     </section>
 
@@ -514,7 +526,7 @@
         <p class="section-sub">Little dog daycare and treats — all for small dogs under one roof.</p>
       </div>
       <div class="service-grid service-grid-shared">
-        <a class="svc-card" href="little-dog-daycare.html">
+        <a class="svc-card" href="little-dog-daycare">
           <div class="svc-ic"><i class="fa-solid fa-dog"></i></div>
           <h3>Dog Daycare</h3>
           <p>Supervised play, enriched activities, Meet &amp; Greet required — for dogs 18″ (paw-to-back) or under.</p>

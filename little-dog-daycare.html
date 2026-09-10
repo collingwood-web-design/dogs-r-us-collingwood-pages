@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
+    <script>
+      /* Prefer clean URLs when someone lands on the .html form. */
+      (function () {
+        var path = window.location.pathname;
+        if (!/\.html$/i.test(path)) return;
+        var clean = path.replace(/\.html$/i, "");
+        if (/\/index$/i.test(clean)) clean = clean.replace(/\/index$/i, "/") || "/";
+        if (clean === "") clean = "/";
+        window.location.replace(clean + window.location.search + window.location.hash);
+      })();
+    </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Little Dog Daycare | Dogs R Us Collingwood</title>
@@ -9,13 +21,13 @@
   <meta name="author" content="Dogs R Us Collingwood">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#0d9488">
-  <link rel="canonical" href="https://dogsruscollingwood.com/little-dog-daycare.html">
+  <link rel="canonical" href="https://dogsruscollingwood.com/little-dog-daycare">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_CA">
   <meta property="og:site_name" content="Dogs R Us Collingwood">
   <meta property="og:title" content="Little Dog Daycare | Dogs R Us Collingwood">
   <meta property="og:description" content="Little dog daycare at Dogs R Us in Collingwood, Ontario. Care for little dogs near Blue Mountain, Wasaga Beach, Clearview and Thornbury.">
-  <meta property="og:url" content="https://dogsruscollingwood.com/little-dog-daycare.html">
+  <meta property="og:url" content="https://dogsruscollingwood.com/little-dog-daycare">
   <meta property="og:image" content="https://media.cwd-cdn.com/dogs-r-us-collingwood/images/og-share.jpg">
   <meta property="og:image:secure_url" content="https://media.cwd-cdn.com/dogs-r-us-collingwood/images/og-share.jpg">
   <meta property="og:image:type" content="image/jpeg">
@@ -39,7 +51,7 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Little Dog Daycare | Dogs R Us Collingwood",
-    "url": "https://dogsruscollingwood.com/little-dog-daycare.html",
+    "url": "https://dogsruscollingwood.com/little-dog-daycare",
     "description": "Little dog daycare at Dogs R Us in Collingwood, Ontario. Care for little dogs near Blue Mountain, Wasaga Beach, Clearview and Thornbury.",
     "isPartOf": { "@type": "WebSite", "name": "Dogs R Us Collingwood", "url": "https://dogsruscollingwood.com/" },
     "about": { "@id": "https://dogsruscollingwood.com/#business" }
@@ -62,17 +74,17 @@
 
   <div class="site-header">
     <div class="header-inner">
-      <a class="logo" href="index.html">
+      <a class="logo" href="./">
         <img src="https://media.cwd-cdn.com/dogs-r-us-collingwood/images/logo-mark.png" alt="Dogs R Us Collingwood dog daycare logo" width="180" height="96">
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
       <nav id="site-nav" class="nav" aria-label="Primary">
-        <a href="index.html#little-dogs">Daycare</a>
-        <a href="index.html#pricing">Pricing</a>
-        <a href="index.html#faq">F.A.Q.</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="./#little-dogs">Daycare</a>
+        <a href="./#pricing">Pricing</a>
+        <a href="./#faq">F.A.Q.</a>
+        <a href="./#contact">Contact</a>
         <a class="nav-cta" href="sms:7056064145"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Text Tracie</a>
       </nav>
     </div>
@@ -114,7 +126,7 @@
         </div>
         </article>
         <p class="fine center">All prices will add HST. Square at drop-off / e-transfer to <a href="mailto:Info@DogsRUsCollingwood.com">Info@DogsRUsCollingwood.com</a>.</p>
-        <p class="fine center"><a href="index.html">Back to Dogs R Us Collingwood</a></p>
+        <p class="fine center"><a href="./">Back to Dogs R Us Collingwood</a></p>
       </div>
     </section>
 

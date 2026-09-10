@@ -3,7 +3,6 @@
 > Little dog daycare in Collingwood, Ontario serving Blue Mountain, Wasaga Beach, Clearview and Thornbury. Small dog daycare, puppy daycare, and dog boarding. Owner-operated by Tracie.
 
 Site: https://dogsruscollingwood.com/
-Preview: https://collingwood-web-design.github.io/dogs-r-us-collingwood-pages/
 Phone: +1-705-606-4145
 Email: Info@DogsRUsCollingwood.com
 Address: 14 Balsam St, Collingwood, ON L9Y 4H7, Canada
@@ -12,8 +11,8 @@ Payment: Square at drop-off / e-transfer to Info@DogsRUsCollingwood.com
 
 ## Pages
 
-- Home: /
-- Little Dog Daycare: /little-dog-daycare.html
+- Home: https://dogsruscollingwood.com/
+- Little Dog Daycare: https://dogsruscollingwood.com/little-dog-daycare
 
 ## About
 
